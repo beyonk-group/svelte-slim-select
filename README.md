@@ -22,6 +22,7 @@ npm i -D @beyonk/svelte-slim-select
 
 ```js
 import SlimSelect from '@beyonk/svelte-slim-select'
+import 'slim-select/dist/slimselect.css' // or from a cdn as per slim-select docs.
 
 export default {
 	components: {
