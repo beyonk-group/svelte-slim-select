@@ -1,8 +1,14 @@
-<select ref:select>
+<select ref:select multiple="{multiple}">
 </select>
 
 <script>
   export default {
+    data () {
+      return {
+        multiple: false
+      }
+    },
+
     async oncreate () {
       const { default: SlimSelect } = await import('slim-select')
       const options = Object.assign(

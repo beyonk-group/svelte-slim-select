@@ -71,6 +71,14 @@ You have two events:
 <SlimSelect on:change="doSomething()" on:beforeChange="doOtherThing()" />
 ```
 
+### Select types
+
+You can create a multi-select by sending the `multiple: true` property to the component:
+
+```jsx
+<SlimSelect multiple="true" />
+```
+
 ## Thanks
 
 Huge thanks to [Nick A Walsh](https://codepen.io/nickawalsh/) for his original carousel, [Rich Harris](https://github.com/Rich-Harris) for his immense work on [Svelte](https://svelte.technology), and [Stu Plumbley](https://github.com/stuplum) for his limitless flexbox expertise.
