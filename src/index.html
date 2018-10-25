@@ -2,10 +2,9 @@
 </select>
 
 <script>
-  import SlimSelect from 'slim-select'
-
   export default {
-    oncreate () {
+    async oncreate () {
+      const { default: SlimSelect } = await import('slim-select')
       const options = Object.assign(
         {
           select: this.refs.select,
@@ -16,8 +15,6 @@
       )
 
       const slimSelect = new SlimSelect(options)
-
-      this.set({ slimSelect })
     }
   }
 </script>
