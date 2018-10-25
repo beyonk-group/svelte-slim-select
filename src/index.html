@@ -7,8 +7,11 @@
 
   export default {
     oncreate () {
-      const options = Object.assign({
-        select: this.refs.select
+      const options = Object.assign(
+        {
+          select: this.refs.select,
+          onChange: this.fire('change'),
+          beforeOnChange: this.fire('beforeChange')
         },
         this.get()
       )

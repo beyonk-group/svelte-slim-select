@@ -56,7 +56,19 @@ export default {
 </script>
 ```
 
-To make your life easy, all component options are those directly from [http://slimselectjs.com/options](The original documentation).
+To make your life easy, all component options are those directly from [http://slimselectjs.com/options](The original 
+documentation).
+
+### Events
+
+You have two events:
+
+* `on:change` relates to SlimSelect's `onChange` event
+* `on:beforeChange` relates to SlimSelect's `beforeOnChange` event
+
+```jsx
+<SlimSelect on:change="doSomething()" on:beforeChange="doOtherThing()" />
+```
 
 ## Thanks
 
