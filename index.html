@@ -1,0 +1,23 @@
+<html lang="en">
+  <body>
+    <div id="ms"></div>
+    <script src="./index.js"></script>
+    <script>
+      const multiselect = new Multiselect({
+        target: document.getElementById('ms'),
+        data: {
+          data: [
+            {
+              label: 'Animals',
+              options: [
+                {text: 'Cat'},
+                {text: 'Dog'},
+                {text: 'Bird'}
+              ]
+            }
+          ]
+        }
+      })
+    </script>
+  </body>
+</html>

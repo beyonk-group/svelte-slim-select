@@ -1,0 +1,21 @@
+<select ref:select>
+</select>
+
+<script>
+  import SlimSelect from 'slim-select'
+  import 'slim-select/dist/slimselect.css'
+
+  export default {
+    oncreate () {
+      const options = Object.assign({
+        select: this.refs.select
+        },
+        this.get()
+      )
+
+      const slimSelect = new SlimSelect(options)
+
+      this.set({ slimSelect })
+    }
+  }
+</script>

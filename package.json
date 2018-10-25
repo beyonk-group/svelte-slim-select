@@ -1,0 +1,29 @@
+{
+  "name": "@beyonk/svelte-slim-select",
+  "svelte": "src/index.html",
+  "module": "index.mjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "NODE_ENV=development rollup -cw",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "rollup": "^0.66.6",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-postcss": "^1.6.2",
+    "rollup-plugin-serve": "^0.6.0",
+    "rollup-plugin-svelte": "^4.3.2",
+    "slim-select": "^1.18.6",
+    "svelte": "^2.14.2"
+  },
+  "keywords": [
+    "svelte"
+  ],
+  "files": [
+    "src",
+    "index.mjs",
+    "index.js"
+  ]
+}
