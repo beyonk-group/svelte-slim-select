@@ -16,7 +16,6 @@
     "rollup-plugin-postcss": "^1.6.2",
     "rollup-plugin-serve": "^0.6.0",
     "rollup-plugin-svelte": "^4.3.2",
-    "slim-select": "^1.18.6",
     "svelte": "^2.14.2"
   },
   "keywords": [
@@ -26,5 +25,8 @@
     "src",
     "index.mjs",
     "index.js"
-  ]
+  ],
+  "dependencies": {
+    "slim-select": "^1.18.6"
+  }
 }
